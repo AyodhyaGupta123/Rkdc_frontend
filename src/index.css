@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: #141414;
+    color: #fff;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs tracking-widest2 uppercase text-stone;
+  }
+  .link-underline {
+    @apply relative inline-flex items-center gap-2 text-sm uppercase tracking-wide text-ink after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-ink after:origin-left after:scale-x-100 hover:after:scale-x-0 after:transition-transform after:duration-300;
+  }
+}

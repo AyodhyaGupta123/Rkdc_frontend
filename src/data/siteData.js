@@ -92,7 +92,7 @@ export const projects = [
 export const services = [
   {
     id: "01",
-    title: "Work Planning",
+    title: "Planning",
     copy: "Project planning and execution strategy designed to streamline the complete building process.",
     open: true,
   },
@@ -301,7 +301,7 @@ export const footerData = {
   phone: ["81030 78916", "8120249676"],
   email: "arraghuwarsingh78916@gmail.com",
   services: [
-    "Work Planning",
+    "Planning",
     "Designing",
     "3D Elevation",
     "Structure Drawing",

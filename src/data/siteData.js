@@ -315,6 +315,11 @@ export const footerData = {
   ],
   social: [
     {
+      label: "Instagram",
+      href: "https://www.instagram.com/rkdc.bhopal?utm_source=qr&igsi=MjR0ODN5MDYzZnhl",
+      icon: "instagram",
+    },
+    {
       label: "Facebook",
       href: "https://www.facebook.com/share/19LXBgLoMc/",
       icon: "facebook",

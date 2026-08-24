@@ -113,11 +113,17 @@ export default function Footer() {
           {/* Location & Details */}
           <div className="space-y-3 text-sm text-neutral-400 lg:col-span-3">
             <p className="text-xs font-semibold uppercase tracking-wider text-neutral-200">Headquarters</p>
-            <div className="pt-2 leading-relaxed">
+            <a
+              href="https://www.google.com/maps/dir//RKDC+Architect+and+Consultant+Bhopal,+New+Choksey+Nagar,+Navi+Bagh,+Bhopal,+Madhya+Pradesh+462038/@23.3183524,77.4087948,57m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x397c69001c8bf8ab:0x2b241b3377bd46c1!2m2!1d77.4088594!2d23.3183761?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw"
+              target="_blank"
+              rel="noreferrer"
+              title="Open RKDC location in Google Maps"
+              className="block pt-2 leading-relaxed transition-colors hover:text-amber-400"
+            >
               {footerData.address.map((line) => (
                 <p key={line}>{line}</p>
               ))}
-            </div>
+            </a>
             {Array.isArray(footerData.phone) ? (
               footerData.phone.map((number) => (
                 <p key={number} className="pt-1 font-medium text-neutral-200">
@@ -153,6 +159,14 @@ export default function Footer() {
                 {subscribed ? "Subscribed!" : "Subscribe"}
               </button>
             </form>
+
+            <iframe
+              title="RKDC Architect and Consultant location"
+              src="https://www.google.com/maps?q=RKDC+Architect+and+Consultant+Bhopal,+New+Choksey+Nagar,+Navi+Bagh,+Bhopal,+Madhya+Pradesh+462038&output=embed"
+              className="mt-5 h-44 w-full max-w-md rounded-2xl border border-neutral-800 grayscale-[0.2]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
 
         </div>

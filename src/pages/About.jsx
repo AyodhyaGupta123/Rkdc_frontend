@@ -25,14 +25,65 @@ export default function About() {
   return (
     <div className="bg-paper pb-20 pt-28">
       <section className="mx-auto max-w-8xl px-6 lg:px-10">
+        <p className="text-xs uppercase tracking-[0.22em] text-stone">About Us</p>
+        <h1 className="mt-5 max-w-4xl font-display text-5xl leading-none text-ink md:text-6xl">
+          Thoughtful spaces, shaped with purpose and built to last.
+        </h1>
+      </section>
+
+      <section className="mx-auto mt-14 max-w-8xl px-6 lg:px-10">
+        <div className="grid gap-10 border-y border-line py-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16 lg:py-16">
+          <div className="grid grid-cols-[1.25fr_0.75fr] items-end gap-4">
+            <img
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+              alt="Architectural model in a design studio"
+              className="h-[380px] w-full rounded-[8px] object-cover"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=700&q=80"
+              alt="RK Dwelling Creation studio workspace"
+              className="mb-10 h-56 w-full rounded-[8px] object-cover"
+            />
+          </div>
+
+          <div>
+            <p className="text-xs uppercase tracking-[0.22em] text-stone">Founder&apos;s note</p>
+            <h2 className="mt-4 font-display text-4xl leading-tight text-ink md:text-5xl">
+              Ar. Raghuwar Singh
+            </h2>
+            <p className="mt-3 text-sm uppercase tracking-[0.18em] text-stone">
+              Founder &amp; Principal Consultant
+            </p>
+            <p className="mt-7 max-w-2xl text-base leading-relaxed text-stone">
+              RK Dwelling Creation was built on a simple belief: good design should make everyday
+              life clearer, more comfortable, and more beautiful. Arraghuwar brings together
+              architectural planning, interior thinking, and practical construction knowledge to
+              guide each project from its first idea to its final detail.
+            </p>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-stone">
+              His approach is personal and collaborative, with careful attention to the client&apos;s
+              needs, the character of the site, and the realities of execution. The result is design
+              that feels considered on paper and works confidently in the real world.
+            </p>
+            <div className="mt-8 grid gap-5 border-t border-line pt-6 sm:grid-cols-2">
+              <div>
+                <p className="text-xs uppercase tracking-[0.18em] text-stone">Focus</p>
+                <p className="mt-2 text-sm font-medium text-ink">Architecture, interiors &amp; execution</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-[0.18em] text-stone">Based in</p>
+                <p className="mt-2 text-sm font-medium text-ink">Bhopal, Madhya Pradesh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto mt-24 max-w-8xl px-6 lg:px-10">
         <div className="overflow-hidden rounded-[8px] border border-line bg-offwhite">
           <div className="grid items-center gap-0 lg:grid-cols-2">
             <div className="p-8 md:p-12 lg:p-16">
-              <p className="text-xs uppercase tracking-[0.22em] text-stone">About us</p>
-              <h1 className="mt-6 font-display text-5xl leading-none text-ink md:text-6xl">
-                Turning ideas into spaces that feel practical, beautiful, and enduring.
-              </h1>
-              <p className="mt-6 max-w-xl text-base leading-relaxed text-stone">
+              <p className="max-w-xl text-base leading-relaxed text-stone">
                 RK Dwelling Creation is a design and execution-focused studio dedicated to planning,
                 designing, and delivering architecture and interior solutions with clarity and care.
                 Our work covers residential projects, exterior and interior detailing, elevation
